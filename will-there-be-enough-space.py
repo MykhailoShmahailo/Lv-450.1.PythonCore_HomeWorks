@@ -1,11 +1,7 @@
-def enough(cap,on,wait):
-    if (cap-on) > wait:
-        print(cap-on - wait)
-    elif (cap-on) == wait:
-        print("0")
-    else:
-        print(cap-on) 
- 
- 
- 
- print(enough(100, 60, 50))
+def enough(cap, on, wait):
+    esp = on + wait - cap
+    if esp < 0:
+        esp = 0        
+    return esp
+
+print(enough(100,50,181))    
