@@ -120,8 +120,7 @@ def finalResult():
             return
     else:
           userLoseBalance = float(userBalanceNew - userMoney)
-          print(Fore.RED + "You are", gameResult, round(userLoseBalance,2), "dollars")
-          finalLoseBalance = userBalanceNew - userLoseBalance
-          print(Fore.YELLOW + "Your new balance is", finalLoseBalance, "dollars")
+          print(Fore.RED + "You are", gameResult, round(userMoney,2), "dollars")
+          print(Fore.YELLOW + "Your new balance is", userBalanceNew, "dollars")
           return
 finalResult()
